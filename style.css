@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body{
+    background-color: black;
+    color: white;
+    font-family: source sans pro;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+a, .grey-text{
+    text-decoration: none;
+    color: gray;
+
+}
+button {
+    height: 15px;
+    width: 15px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+    border-bottom: 12px solid white ;
+}
+.announcement {
+    width: 190px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border: 3px solid;
+    font-weight: 500;
+    font-size: 14px;
+    
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+   
+}
+.announcement:hover{
+    background: white;
+    color: black;
+    transition:ease-in 1s;
+}
+.image {
+    max-width: 70%;
+    max-height: 70%;
+    margin: 100px;
+}
+.main-content-duos {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+
+}
+.card,.watch-series-8,.creativity,.iphone-14 {
+    border: 5px solid white;
+    padding: 25px;
+}
+.intro {
+    padding-bottom: 80px;
+}
+.jpg {
+    max-width: 100%;
+    max-height: 70%;
+}
+.red-text {
+    color: red;
+}
+.card {
+    background-color: white;
+    color: black;
+}
+@media only screen and (min-width:961px) {
+    .slider {
+        height: 1080px;
+        width: 1920px;
+        animation: slide 20s infinite;
+    }
+    @keyframes slide {
+        20% {
+            background: url(3.jpg);
+        }
+        40% {
+            background: url(4.jpg);
+        }
+        60% {
+            background: url(5.jpg);
+        }
+        80% {
+            background: url(6.jpg);
+        }
+        100% {
+            background: url(7.jpg);
+        }
+    }
+}
+@media only screen and    (min-width: 401px) and (max-width:960px) {
+    .slider {
+        height: 960px;
+        width: 960px;
+        animation: slide 20s infinite;
+    }
+    @keyframes slide {
+        20% {
+            background: url(11.jpg);
+        }
+        40% {
+            background: url(22.jpg);
+        }
+        60% {
+            background: url(33.jpg);
+        }
+        80% {
+            background: url(44.jpg);
+        }
+        100% {
+            background: url(55.jpg);
+        }
+    }
+}
+
